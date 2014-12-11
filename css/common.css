@@ -82,8 +82,9 @@ img {display:block;
 	color:rgba(76,76,76,1.0);background-color:rgba(76,76,76,1.0);box-shadow:0px 1px 4px rgba(0,0,0,1.0);}
 	#navbarSub {display:block;height:50px;}
 		.navbarItem {display:block;float:left;												/* white bar on homepage nav */
-			color:rgba(255,255,255,1.0);padding:2px 16px; padding-top:15px; cursor:pointer;border-bottom: 5px solid transparent; padding-bottom: 5px;}
+			color:rgba(255,255,255,1.0) !important;padding:2px 16px; padding-top:15px; cursor:pointer;border-bottom: 5px solid transparent; padding-bottom: 5px;}
 		.navbarItem:hover, .navbarItem:focus, .navbarItem:active {text-decoration:none; border-bottom-color: #fff;}
+		.navbarItemSelected {text-decoration:none; border-bottom-color: #aaa;}
 			.navbarItem a {display:block;width:100%;height:100%;
 				text-decoration:inherit;}
 
@@ -122,7 +123,11 @@ img {display:block;
 		.pickBox3 {width:23%;margin:0px 0px 0px 1%;}
         .pickBox4 {width:23%;margin:0px 1% 0px 1%;}
         .pickPlace {font-weight:600;}
-			.subImg {width:100%;height:200px;}
+			.subImg {width:100%;height:200px;
+				border-top-left-radius:2px;
+				border-top-right-radius:2px;
+				border-bottom-left-radius:0px !important;
+				border-bottom-right-radius:0px !important;}
 			.subCaption {padding: 10px;width:100%;height:auto;background-color:rgba(225,245,254,.2);border: 1px solid #b3e5fc;}
 			.subCaption-home {
 				min-height: 250px;
@@ -192,14 +197,14 @@ h3 {
 /* FOOTER *******************************************************************************/
 #footerContainer {height:95px;
 	color:rgba(255,255,255,0.5);background-color:rgba(76,76,76,1.0);margin-top:75px;}
-	#footer {line-height:95px; font-size: 13px;}
+	#footer {line-height:90px; font-size: 13px;}
 		.footerItem {display:block;float:left;
-			color:rgba(255,255,255,1.0);padding:2px 16px;line-height:95px;cursor:pointer;}
+			color:rgba(255,255,255,1.0);padding:2px 16px;line-height:90px;cursor:pointer;}
 		.footerItem:hover, .footerItem:focus, .footerItem:active {text-decoration:underline;}
 			.footerItem a {display:block;width:100%;height:100%;
 				text-decoration:inherit;}
 		#footerCopyright {display:block;float:right;
-			color:rgba(255,255,255,1.0);line-height:95px;}
+			color:rgba(255,255,255,1.0);line-height:90px;}
 
 /* SPECIFIC LOCATIONS **********************************************************************************/
 .locationName {
