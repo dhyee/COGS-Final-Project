@@ -81,7 +81,7 @@ img {display:block;
 #navbarContainerSub {position:fixed;top:75px;left:0px;width:100%;height:50px;
 	color:rgba(76,76,76,1.0);background-color:rgba(76,76,76,1.0);box-shadow:0px 1px 4px rgba(0,0,0,1.0);}
 	#navbarSub {display:block;height:50px;}
-		.navbarItem {display:block;float:left;												/* red bar on homepage nav */
+		.navbarItem {display:block;float:left;												/* white bar on homepage nav */
 			color:rgba(255,255,255,1.0);padding:2px 16px; padding-top:15px; cursor:pointer;border-bottom: 5px solid transparent; padding-bottom: 5px;}
 		.navbarItem:hover, .navbarItem:focus, .navbarItem:active {text-decoration:none; border-bottom-color: #fff;}
 			.navbarItem a {display:block;width:100%;height:100%;
