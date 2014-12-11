@@ -81,9 +81,9 @@ img {display:block;
 #navbarContainerSub {position:fixed;top:75px;left:0px;width:100%;height:50px;
 	color:rgba(76,76,76,1.0);background-color:rgba(76,76,76,1.0);box-shadow:0px 1px 4px rgba(0,0,0,1.0);}
 	#navbarSub {display:block;height:50px;}
-		.navbarItem {display:block;float:left;
-			color:rgba(255,255,255,1.0);padding:2px 16px;line-height:50px;cursor:pointer;}
-		.navbarItem:hover, .navbarItem:focus, .navbarItem:active {text-decoration:underline;}
+		.navbarItem {display:block;float:left;												/* red bar on homepage nav */
+			color:rgba(255,255,255,1.0);padding:2px 16px; padding-top:15px; cursor:pointer;border-bottom: 5px solid transparent; padding-bottom: 5px;}
+		.navbarItem:hover, .navbarItem:focus, .navbarItem:active {text-decoration:none; border-bottom-color: #fff;}
 			.navbarItem a {display:block;width:100%;height:100%;
 				text-decoration:inherit;}
 
@@ -123,7 +123,10 @@ img {display:block;
         .pickBox4 {width:23%;margin:0px 1% 0px 1%;}
         .pickPlace {font-weight:600;}
 			.subImg {width:100%;height:200px;}
-			.subCaption {padding-top: 5px;width:100%;height:auto;background-color:rgba(225,245,254,.15);border: 1px solid #b3e5fc;}
+			.subCaption {padding: 10px;width:100%;height:auto;background-color:rgba(225,245,254,.2);border: 1px solid #b3e5fc;}
+			.subCaption-home {
+				min-height: 250px;
+			}
 		.inlineImg {width:32%;height:auto;}
 		.inlineCaption {width:68%;height:auto;padding-left:10px;}
 		.wideImg {width:100%;height:auto;}
@@ -176,18 +179,19 @@ h1.specials {
 	color: #DA2E75;
 }
 
-h1.details {
-	color: #00BCD4;
-}
-
 h2 {
 	font-size: 20px;
+	font-weight: 600;
 }
 
+h3 {
+	font-size: 14px;
+	font-weight: 600;
+}
 
 /* FOOTER *******************************************************************************/
 #footerContainer {height:95px;
-	color:rgba(255,255,255,0.5);background-color:rgba(76,76,76,1.0);margin-top:40px;}
+	color:rgba(255,255,255,0.5);background-color:rgba(76,76,76,1.0);margin-top:75px;}
 	#footer {line-height:95px; font-size: 13px;}
 		.footerItem {display:block;float:left;
 			color:rgba(255,255,255,1.0);padding:2px 16px;line-height:95px;cursor:pointer;}
@@ -204,10 +208,16 @@ h2 {
     margin:40px 0px 10px 0px;
 }
 
-.locationHeader{
-    font-size:300%;
+span.locationHeader{
+    font-size:42px;
     color: #00BCD4;
     padding-right: 10px;
+    font-weight: 400;
+}
+
+.detailsHeader {
+	color: #00BCD4;
+	padding-right: 10px;
 }
 
 .locationClear{
@@ -225,4 +235,20 @@ h2 {
     width: 32%;
     height: auto;
     padding-left: 50px;
+}
+
+h1.ratingsHeader {
+	font-weight: 400;
+	margin-top: -.35em;
+	font-size: 28px;
+}
+
+h2.categoryHeader {
+	font-weight: 300;
+	font-size: 22px;
+}
+
+/* GOOGLE MAPS *************************************************************************************************/
+iframe {
+	float: right;
 }
