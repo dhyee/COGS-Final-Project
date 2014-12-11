@@ -43,9 +43,8 @@ rgba(252,228,236,0.15) bg on the specials and vents page
 
 * {box-sizing:border-box;}
 body {width:100%;min-width:600px;height:100%;
-	font-family:'Open Sans',Verdana,Geneva,sans-serif;font-size:14px;
-	padding:0px;margin:0px;
-	background-image:url(../images/ricepaper.png);background-size:250px 250px;background-repeat:repeat;}
+	font-family:'Open Sans','Helvetica Neue', Helvetica,sans-serif;font-size:14px;font-weight:300;
+	padding:0px;margin:0px;background-color: #fff;}
 table {border-collapse:collapse;}
 ::-webkit-input-placeholder { /* WebKit browsers */color:rgba(0,0,0,0.6);}
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:rgba(0,0,0,0.6);}
@@ -70,11 +69,11 @@ img {display:block;
 #navbarContainer {position:fixed;top:0px;left:0px;width:100%;height:75px;
 	background-color:rgba(255,255,255,1.0);}
 	#navbar {display:block;height:75px;
-		background-color:rgba(255,255,255,1.0);font-size:120%;line-height:100%;}
-		#logo {display:block;height:75px;width:auto;float:left;}
+		background-color:rgba(255,255,255,1.0);line-height:100%;}
+		#logo {display:block;height:75px;width:auto;float:left;padding-right: 70px;}
 			.logoImg {height:75px;width:auto;}
 		#search {display:block;width:auto;float:left;
-			padding:0px auto;line-height:75px;}
+			padding:0px auto;line-height:75px;font-weight:400;}
 			#sortBy {font-size:inherit;background-color:transparent;
 				border:none;border:1px solid rgba(100,100,100,0.2);}
 #navbarContainerSubGhost {display:block;width:100%;height:50px;float:left;clear:both;}
@@ -90,10 +89,10 @@ img {display:block;
 /* BANNER *******************************************************************************/
 #bannerContainer {height:300px;}
 	#banner {display:table;height:300px;
-		text-align:center;font-size:500%;
+		text-align:center;font-size:4.5em;
 		color:rgba(255,255,255,1.0);}
-		#bannerText {display:table-cell;vertical-align:middle;line-height:80%;}
-			.bannerSubText {font-size:32%;color:rgba(200,200,200,1.0);}
+		#bannerText {display:table-cell;vertical-align:middle;line-height:80%;font-weight:400;}
+			.bannerSubText {font-size:45%;color:rgba(255,255,255,1.0);font-weight:300;}
 #bannerContainerHome {background-image:url(../images/homebanner.png);background-size:cover;background-position:center center;
 	height:400px;}
 	#bannerHome {display:table;height:400px;
@@ -106,13 +105,14 @@ img {display:block;
 #contentContainer {}
 	#content {}
 		#content img, #content div {float:left;}
-		.sectionHeader {float:left;clear:both;margin:40px 0px 10px 0px;font-size:300%;}
+		.sectionHeader {float:left;clear:both;margin:40px 0px 10px 0px;}
 		.sectionSeparation {float:left;clear:both;}
 		.featuredImg {width:50%;height:auto;}
 		.featuredCaption {width:50%;height:auto;padding-left:10px;}
 		.pickBox1 {width:32%;margin:0px 1% 0px 0px;}
 		.pickBox2 {width:32%;margin:0px 1% 0px 1%;}
 		.pickBox3 {width:32%;margin:0px 0px 0px 1%;}
+		.pickPlace {font-weight:600;}
 			.subImg {width:100%;height:auto;}
 			.subCaption {padding-top:10px;width:100%;height:auto;}
 		.inlineImg {width:32%;height:auto;}
@@ -140,10 +140,44 @@ img {display:block;
 			.placeRank {position:absolute;top:0px;left:0px;
 				background-color:rgba(150,75,0,1.0);border-bottom-right-radius:2px;}
 
+/***********************
+		HEADERS
+************************/
+
+h1 {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+h1.homepage {
+	color: #03A9F4;
+	font-size: 24px;
+}
+
+h1.milktea {
+	color: #536DFE;
+}
+
+h1.beginner {
+	color: #448AFF;
+}
+
+h1.specials {
+	color: #DA2E75;
+}
+
+h1.details {
+	color: #00BCD4;
+}
+
+h2 {
+	font-size: 20px;
+}
+
 /* FOOTER *******************************************************************************/
 #footerContainer {height:95px;
 	color:rgba(255,255,255,0.5);background-color:rgba(76,76,76,1.0);margin-top:40px;}
-	#footer {line-height:95px;}
+	#footer {line-height:95px; font-size: 13px;}
 		.footerItem {display:block;float:left;
 			color:rgba(255,255,255,1.0);padding:2px 16px;line-height:95px;cursor:pointer;}
 		.footerItem:hover, .footerItem:focus, .footerItem:active {text-decoration:underline;}
