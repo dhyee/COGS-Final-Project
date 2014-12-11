@@ -13,41 +13,40 @@
 		<script src="js/common.js"></script>
 	</head>
 	<body>
-		<div id="navbarContainerGhost">
-			<div id="navbar"></div>
-		</div>
+		<div id="navbarContainerGhost"></div>
 		<div id="navbarContainer">
 			<div id="navbar">
-				<table>
-					<tr>
-						<td id="logo" rowspan="2">
-							<a href="index.html">
-								<img class="logoImg" src="images/tea.jpg">
-							</a>
-						</td>
-						<td id="search" colspan="3">Show Me Milk Tea Places Sorted By 
-							<select id="sortBy">
-								<option selected="selected" disabled="disabled">-------</option>
-								<option>Rating</option>
-								<option>Taste</option>
-								<option>Customer Service</option>
-								<option>Distance From Me</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td class="navbarItem"><a href="what-is-milk-tea.html">What is Milk Tea?</a></td>
-						<td class="navbarItem"><a href="beginners-guide.html">Beginner's Guide</a></td>
-						<td class="navbarItem"><a href="specials-and-events.html">Specials &amp; Events</a></td>
-					</tr>
-				</table>
+				<div id="logo">
+					<a href="index.html">
+						<img class="logoImg" src="images/logo.png">
+					</a>
+				</div>
+				<div id="search" colspan="3">I want to see milk tea places in San Diego ordered by 
+					<select id="sortBy">
+						<option selected="selected" disabled="disabled">...</option>
+						<option>Rating</option>
+						<option>Taste</option>
+						<option>Customer Service</option>
+						<option>Distance From Me</option>
+					</select>
+				</div>
 			</div>
 		</div>
-		<div id="bannerContainer">
-			<div id="banner">
+		<div id="navbarContainerSubGhost"></div>
+		<div id="navbarContainerSub">
+			<div id="navbarSub">
+				<div class="navbarItem"><a href="what-is-milk-tea.html">What is Milk Tea?</a></div>
+				<div class="navbarItem"><a href="beginners-guide.html">Beginner's Guide</a></div>
+				<div class="navbarItem"><a href="specials-and-events.html">Specials &amp; Events</a></div>
+			</div>
+		</div>
+		<div id="bannerContainerHome">
+			<div id="bannerHome">
 				<div id="bannerText">
-					MILK TEA<br>
-					in SAN DIEGO
+					<strong>Milk Tea</strong> San Diego<br>
+					<span class="bannerSubText">
+						Quali-tea recommendations for all your boba needs
+					</span>
 				</div>
 			</div>
 		</div>
@@ -78,7 +77,11 @@
 		</div>
 		<div id="footerContainer">
 			<div id="footer">
-				Donna Yee, Christine Do, Frank Mezzatesta • COGS 187A Fall 2014
+				<div class="footerItem">Who We Are</div>
+				<div class="footerItem">Contact Us</div>
+				<div class="footerItem">Terms</div>
+				<div class="footerItem">Privacy</div>
+				<div id="footerCopyright">© 2014 Christine Do, Frank Mezzatesta, Donna Yee</div>
 			</div>
 		</div>
 	</body>
