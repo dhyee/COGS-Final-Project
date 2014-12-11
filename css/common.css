@@ -45,7 +45,7 @@ rgba(252,228,236,0.15) bg on the specials and vents page
 body {width:100%;min-width:600px;height:100%;
 	font-family:'Open Sans',Verdana,Geneva,sans-serif;font-size:14px;
 	padding:0px;margin:0px;
-	background-image:url(../images/ricepaper.png);background-size:250px 250px;background-repeat:repeat;}
+	/*background-image:url(../images/ricepaper.png);background-size:250px 250px;background-repeat:repeat;*/}
 table {border-collapse:collapse;}
 ::-webkit-input-placeholder { /* WebKit browsers */color:rgba(0,0,0,0.6);}
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:rgba(0,0,0,0.6);}
@@ -100,7 +100,9 @@ img {display:block;
 		text-align:center;font-size:500%;
 		color:rgba(255,255,255,1.0);}
 .whatIsMilkTeaBg {background-color:#5360FE;}
+.beginnersGuideBg {background-color:#448AFF;}
 .specialAndEventsBg {background-color:#DA2E75;}
+.searchBg {background-color: #00BFA5;}
 
 /* CONTENT ******************************************************************************/
 #contentContainer {}
@@ -108,29 +110,34 @@ img {display:block;
 		#content img, #content div {float:left;}
 		.sectionHeader {float:left;clear:both;margin:40px 0px 10px 0px;font-size:300%;}
 		.sectionSeparation {float:left;clear:both;}
+        .featureBox1 {width:32%;margin:0px 1% 0px 0px;}
+		.featureBox2 {width:32%;margin:0px 1% 0px 1%;}
+		.featureBox3 {width:32%;margin:0px 0px 0px 1%;}
 		.featuredImg {width:50%;height:auto;}
-		.featuredCaption {width:50%;height:auto;padding-left:10px;}
-		.pickBox1 {width:32%;margin:0px 1% 0px 0px;}
-		.pickBox2 {width:32%;margin:0px 1% 0px 1%;}
-		.pickBox3 {width:32%;margin:0px 0px 0px 1%;}
-			.subImg {width:100%;height:auto;}
-			.subCaption {padding-top:10px;width:100%;height:auto;}
+		.featuredCaption {width:50%;height:auto;padding-left:40px; line-height: 2em;}
+		.pickBox1 {width:23%;margin:0px 1% 0px 0px;}
+		.pickBox2 {width:23%;margin:0px 1% 0px 1%;}
+		.pickBox3 {width:23%;margin:0px 0px 0px 1%;}
+        .pickBox4 {width:23%;margin:0px 1% 0px 1%;}
+			.subImg {width:100%;height:200px;}
+			.subCaption {padding-top: 5px;width:100%;height:auto;background-color:rgba(225,245,254,.15);border: 1px solid #b3e5fc;}
 		.inlineImg {width:32%;height:auto;}
 		.inlineCaption {width:68%;height:auto;padding-left:10px;}
 		.wideImg {width:100%;height:auto;}
 		.wideCaption {width:100%;height:auto;
 			font-size:300%;text-align:center;padding-bottom:10px;}
 		/* PLACES */
-		.placeCard1 {width:32%;margin:0px 1% 0px 0px;}
-		.placeCard2 {width:32%;margin:0px 1% 0px 1%;}
-		.placeCard3 {width:32%;margin:0px 0px 0px 1%;}
-		.placeCard1, .placeCard2, .placeCard3 {
+		.placeCard1 {width:23%;margin:0px 1% 0px 0px;}
+		.placeCard2 {width:23%;margin:0px 1% 0px 1%;}
+		.placeCard3 {width:23%;margin:0px 1% 0px 1%;}
+        .placeCard4 {width:23%;margin:0px 0px 0px 1%;}
+		.placeCard1, .placeCard2, .placeCard3, .placeCard4 {
 			background-color:rgba(255,255,255,1.0);box-shadow:0px 2px 2px 2px rgba(0,0,0,0.1);
 			border-top-left-radius:2px;
 			border-top-right-radius:2px;
 			border-bottom-left-radius:2px;
 			border-bottom-right-radius:2px;}
-			.placeImg {width:100%;height:auto;
+			.placeImg {width:100%;height:200px;
 				border-top-left-radius:2px;
 				border-top-right-radius:2px;
 				border-bottom-left-radius:0px !important;
@@ -151,3 +158,41 @@ img {display:block;
 				text-decoration:inherit;}
 		#footerCopyright {display:block;float:right;
 			color:rgba(255,255,255,1.0);line-height:95px;}
+
+/* SPECIFIC LOCATIONS **********************************************************************************/
+.locationName {
+    float:left;
+    clear:both;
+    margin:40px 0px 10px 0px;
+}
+
+.locationHeader{
+    font-size:300%;
+    color: #00BCD4;
+    padding-right: 10px;
+}
+
+.locationClear{
+    clear: both;
+}
+
+.carouselContainer{
+    width: 68%;
+    height: auto;
+    background-size: contain;
+    padding-right: 15px;
+}
+
+.ratings{
+    width: 32%;
+    height: auto;
+    padding-left: 50px;
+}
+
+h1{
+    margin: 0 auto;
+}
+
+h2{
+    font-weight: 100;
+}
