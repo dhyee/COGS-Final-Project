@@ -84,9 +84,10 @@ img {display:block;
 		.navbarItem {display:block;float:left;												
 			color:rgba(255,255,255,1.0);padding:2px 40px 2px 0px; padding-top:15px; cursor:pointer;}
 		.navbarItem a {display:block;width:100%;height:100%;
-				text-decoration:inherit;
+				text-decoration:none;
 				border-bottom: 5px solid transparent; /* white bar on homepage nav */
 				padding-bottom: 5px;}
+
 		.navbarItem a:hover, .navbarItem a:focus {
 			text-decoration:none;
 			border-bottom-color: #fff;
@@ -102,6 +103,13 @@ img {display:block;
 			color: #fff;
 		}
 			
+		/*********** Highlight Current Page *************/
+		
+		body#about .navbarItem > a#nav-about,
+		body#guide a#nav-guide,
+		body#specials a#nav-specials {
+			border-bottom-color: #ffffff;
+		}
 
 /* BANNER *******************************************************************************/
 #bannerContainer {height:300px;}
