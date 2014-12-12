@@ -274,6 +274,17 @@ span.locationHeader{
     padding-left: 50px;
 }
 
+.ratingsImg{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.moneyRatingImg{
+    width: 12%;
+    height: auto;
+}
+
 h1.ratingsHeader {
 	font-weight: 400;
 	margin-top: -.35em;
@@ -283,6 +294,19 @@ h1.ratingsHeader {
 h2.categoryHeader {
 	font-weight: 300;
 	font-size: 22px;
+    margin: 24px 0px 10px 0px;
+}
+
+.ratingsBreakdown{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding-right: 15px; 
+}
+
+.otherInfo{
+    width: 40%;
+    height: auto;
 }
 
 /********************************
