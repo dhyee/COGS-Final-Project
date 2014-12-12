@@ -251,27 +251,27 @@ h2.categoryHeader {
 /* BEGINNER'S GUIDE *************************************************************************************************/
 
 .flavorCol1 {
-	padding-right: 34px;
-	padding-bottom: 33px;
+	padding-right: 12px;
+	padding-bottom: 12px;
 }
 
 .flavorCol2 {
-	padding-right: 33px;
-	padding-bottom: 33px;
+	padding-right: 12px;
+	padding-bottom: 12px;
 }
 
 .flavorCol3 {
-	padding-right: 33px;
-	padding-bottom: 33px;
+	padding-right: 12px;
+	padding-bottom: 12px;
 }
 
 .flavorCol4 {
 	padding-right: 0px;
-	padding-bottom: 33px;
+	padding-bottom: 12px;
 }
 
 .test figure {
-	width: 200px;
+	width: 216px;
 	height: 200px;
 	margin-top: 0px;
 	margin-right: 0px;
