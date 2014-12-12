@@ -81,11 +81,27 @@ img {display:block;
 #navbarContainerSub {position:fixed;top:75px;left:0px;width:100%;height:50px;
 	color:rgba(76,76,76,1.0);background-color:rgba(76,76,76,1.0);box-shadow:0px 1px 4px rgba(0,0,0,1.0);z-index: 9999;}
 	#navbarSub {display:block;height:50px;}
-		.navbarItem {display:block;float:left;												/* white bar on homepage nav */
-			color:rgba(255,255,255,1.0);padding:2px 16px; padding-top:15px; cursor:pointer;border-bottom: 5px solid transparent; padding-bottom: 5px;}
-		.navbarItem:hover, .navbarItem:focus, .navbarItem:active {text-decoration:none; border-bottom-color: #fff;}
-			.navbarItem a {display:block;width:100%;height:100%;
-				text-decoration:inherit;}
+		.navbarItem {display:block;float:left;												
+			color:rgba(255,255,255,1.0);padding:2px 40px 2px 0px; padding-top:15px; cursor:pointer;}
+		.navbarItem a {display:block;width:100%;height:100%;
+				text-decoration:inherit;
+				border-bottom: 5px solid transparent; /* white bar on homepage nav */
+				padding-bottom: 5px;}
+		.navbarItem a:hover, .navbarItem a:focus {
+			text-decoration:none;
+			border-bottom-color: #fff;
+		}
+
+		.navbarItem a:visited {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.navbarItem a:active {
+			text-decoration: none;
+			color: #fff;
+		}
+			
 
 /* BANNER *******************************************************************************/
 #bannerContainer {height:300px;}
@@ -115,8 +131,8 @@ img {display:block;
         .featureBox1 {width:32%;margin:0px 1% 0px 0px;}
 		.featureBox2 {width:32%;margin:0px 1% 0px 1%;}
 		.featureBox3 {width:32%;margin:0px 0px 0px 1%;}
-		.featuredImg {width:50%;height:auto;}
-		.featuredCaption {width:50%;height:auto;padding-left:40px; line-height: 2em;}
+		.featuredImg {width:50%;height:350px;}
+		.featuredCaption {width:50%;height:auto;padding-left:40px; line-height: 2em;font-size: 16px;}
 		.pickBox1 {width:23%;margin:0px 1% 0px 0px;}
 		.pickBox2 {width:23%;margin:0px 1% 0px 1%;}
 		.pickBox3 {width:23%;margin:0px 0px 0px 1%;}
@@ -164,7 +180,6 @@ h1 {
 
 h1.homepage {
 	color: #03A9F4;
-	font-size: 24px;
 }
 
 h1.milktea {
@@ -360,6 +375,7 @@ h2.categoryHeader {
 	display: table;
 	padding-top: 55px;
 	text-align: center;
+	color: rgba(0,0,0,.83);
 }
 
 .safeJasmine span {
@@ -374,6 +390,7 @@ h2.categoryHeader {
 	display: table;
 	padding-top: 55px;
 	text-align: center;
+	color: rgba(0,0,0,.87);
 }
 
 .safeClassic span {
