@@ -127,8 +127,8 @@ img {display:block;
 			.subCaption-home {
 				min-height: 250px;
 			}
-		.inlineImg {width:32%;height:auto;}
-		.inlineCaption {width:68%;height:auto;padding-left:10px;}
+		.inlineImg {width:33%;height:250px;}
+		.inlineCaption {width:44%;height:auto;}
 		.wideImg {width:100%;height:auto;}
 		.wideCaption {width:100%;height:auto;
 			font-size:150%;text-align:center;padding-bottom:10px;}
@@ -252,6 +252,8 @@ h2.categoryHeader {
 		BEGINNER'S GUIDE 
 *********************************/
 
+/********** Flavor grid *********/
+
 .flavorCol1 {
 	padding-right: 12px;
 	padding-bottom: 12px;
@@ -291,10 +293,9 @@ h2.categoryHeader {
 
 .test figcaption {
 	position: absolute;
-
 	padding: 10px;
-	background: #2c3f52;
-	color: #ed4e6e;
+	background: #212121;
+	color: #2196F3;
 }
 
 .test figcaption h3 {
@@ -347,6 +348,36 @@ h2.categoryHeader {
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
 	transition: transform 0.4s, opacity 0.1s;
+}
+
+/*****************************************************************/
+
+.safeJasmine {
+	width: 23%;
+	font-size: 45px;
+	font-weight: 400;
+	padding-right: 36px;
+	display: table;
+	padding-top: 55px;
+	text-align: center;
+}
+
+.safeJasmine span {
+	font-weight: 300;
+}
+
+.safeClassic {
+	width: 23%;
+	font-size: 45px;
+	font-weight: 400;
+	padding-left: 36px;
+	display: table;
+	padding-top: 55px;
+	text-align: center;
+}
+
+.safeClassic span {
+	font-weight: 300;
 }
 
 
