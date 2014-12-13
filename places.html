@@ -154,5 +154,66 @@
 				<div id="footerCopyright">© 2014 Christine Do, Frank Mezzatesta, Donna Yee</div>
 			</div>
 		</div>
+		<script>
+			$(document).ready(function(){
+				sortCardCollection();
+			});
+			function sortCardCollection(){
+				if ($("#sortBy").val() == "Overall Rating"){
+					cardCollection.sort(function(a,b){return (a.rating-b.rating);});
+				}else if ($("#sortBy").val() == "Taste"){
+					cardCollection.sort(function(a,b){return (a.taste-b.taste);});
+				}else if ($("#sortBy").val() == "Ambiance"){
+					cardCollection.sort(function(a,b){return (a.ambiance-b.ambiance);});
+				}else if ($("#sortBy").val() == "Customer Service"){
+					cardCollection.sort(function(a,b){return (a.customerService-b.customerService);});
+				}else if ($("#sortBy").val() == "Distance From Me"){
+					cardCollection.sort(function(a,b){return (a.distance-b.distance);});
+				}else{
+					cardCollection.sort(function(a,b){return (a.rating-b.rating);});
+				}
+				var out = "";
+				var i = 1;
+				var card;
+				var cardIndex = 0;
+				while (cardIndex < cardCollection.length){
+					// grab the card data
+					card = cardCollection[cardIndex];
+					// generate the hearts
+					heartsOut = "";
+					switch (card.rating){
+						case 0.5:heartsOut = '<img class="cardHearts" src="images/Ratings/1HalfRating.svg">';break;
+						case   1:heartsOut = '<img class="cardHearts" src="images/Ratings/2OneRating.svg">';break;
+						case 1.5:heartsOut = '<img class="cardHearts" src="images/Ratings/3OneAndHalfRating.svg">';break;
+						case   2:heartsOut = '<img class="cardHearts" src="images/Ratings/4TwoRating.svg">';break;
+						case 2.5:heartsOut = '<img class="cardHearts" src="images/Ratings/5TwoAndHalfRating.svg">';break;
+						case   3:heartsOut = '<img class="cardHearts" src="images/Ratings/6ThreeRating.svg">';break;
+						case 3.5:heartsOut = '<img class="cardHearts" src="images/Ratings/7ThreeAndHalfRating.svg">';break;
+						case   4:heartsOut = '<img class="cardHearts" src="images/Ratings/8FourRating.svg">';break;
+						case 4.5:heartsOut = '<img class="cardHearts" src="images/Ratings/9FourAndHalfRating.svg">';break;
+						case   5:heartsOut = '<img class="cardHearts" src="images/Ratings/10FiveRating.svg">';break;
+					}
+					console.log(heartsOut);
+					// output the card
+					out += '\
+						<div class="placeCard'+i+'">\
+							<img class="placeImg" src="images/tea.jpg" alt="x">\
+							<div class="placeCaption">\
+								'+card.name+' '+card.address+'<br>\
+								'+heartsOut+' '+card.distance+'mi away<br>\
+							</div>\
+							<div class="placeRank"></div>\
+						</div>\
+					';
+					// clear the row
+					if (i == 4){out += '<div class="clear"></div>';}
+					// advance i
+					i %= 4;
+					i++;
+					cardIndex++
+				}
+				$("#placeCardTarget").html(out);
+			}
+		</script>
 	</body>
 </html>

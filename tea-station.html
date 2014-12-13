@@ -11,6 +11,11 @@
 		<link href='css/common.css' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/common.js"></script>
+
+		<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+		<script src="owl-carousel/owl.carousel.js"></script>
+
 	</head>
 	<body>
 		<div id="navbarContainerGhost"></div>
@@ -46,17 +51,35 @@
 			
                 <div class="locationName"><span class="locationHeader">Tea Station</span> 7315 Clairemont Mesa Blvd San Diego, CA 92111</div>
 				<div class="sectionSeparation"></div>
-                <img class="carouselContainer" src="images/mithome.jpg" alt="x">
+                
+             
+                <!--<img class="carouselContainer" src="images/mithome.jpg" alt="x">-->
+                   <!--- carousel-->
+                <div id="owl-demo" class="owl-carousel owl-theme">
+				  <div class="item"> <img src="images/mithome.jpg"> </div>
+				  <div class="item"> <img src="images/mithome.jpg">  </div>
+				  <div class="item"> <img src="images/mithome.jpg">  </div>
+				  <div class="item"> <img src="images/mithome.jpg">  </div>
+				  <div class="item"> <img src="images/mithome.jpg">  </div>
+				  <div class="item"> <img src="images/mithome.jpg">  </div>
+				  <div class="item"> <img src="images/mithome.jpg">  </div>
+				</div>
+
+				
+
+<!-- carousel -->
+
 				<div class="ratings">
                     <h1 class="ratingsHeader">Ratings</h1>
                     <h2 class="categoryHeader">Taste</h2>
-                    <img class="ratingsImg" src="images/Ratings/9FourAndHalfRating.svg" alt="x"><br><br>
+                    <img class="ratingsImg" src="images/Ratings/9FourAndHalfRating.svg" alt="x"><br>
                     <h2 class="categoryHeader">Customer Service</h2>
-                    <img class="ratingsImg" src="images/Ratings/8FourRating.svg" alt="x"><br><br>
+                    <img class="ratingsImg" src="images/Ratings/8FourRating.svg" alt="x"><br>
                     <h2 class="categoryHeader">Ambiance</h2>
-                    <img class="ratingsImg" src="images/Ratings/8FourRating.svg" alt="x"><br><br>
+                    <img class="ratingsImg" src="images/Ratings/8FourRating.svg" alt="x"><br>
                     <h2 class="categoryHeader">Price</h2>
-                    <img class="moneyRatingImg" src="images/Ratings/moneyRating.svg"><img class="moneyRatingImg" src="images/Ratings/moneyRating.svg"><img class="moneyRatingImg" src="images/Ratings/moneyRating.svg">~$ 4.00-6.00
+                    <img class="moneyRatingImg" src="images/Ratings/moneyRating.svg"><img class="moneyRatingImg" src="images/Ratings/moneyRating.svg"><img class="moneyRatingImg" src="images/Ratings/moneyRating.svg"><br>
+                    <h4 id="cake">~$ 4.00 - 6.00</h4>
                 </div>
                 
                 <div class="locationClear"></div>
@@ -82,38 +105,232 @@
 				
                 <div class="locationName"><h1 class="detailsHeader">Top Flavors at Tea Station</h1></div>
 				<div class="sectionSeparation"></div>
-				<div>
-                    <div class="placeCard1">
-					<img class="placeImg" src="images/tea.jpg" alt="x">
-					<div class="placeCaption">
-						Name Milk Tea<br>
-					</div>
-					<div class="placeRank"></div>
+				<div class="test cs-style-3">
+				<div class="flavorCol1">
+					<figure>
+						<img src="images/Almond%20Milk%20Tea.svg" alt="Almond Milk Tea">
+						<figcaption>
+							<h3>Almond Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
 				</div>
-				<div class="placeCard2">
-					<img class="placeImg" src="images/tea.jpg" alt="x">
-					<div class="placeCaption">
-						Name Milk Tea<br>
-					</div>
-					<div class="placeRank"></div>
+				<div class="flavorCol2">
+					<figure>
+						<img src="images/Barley%20Milk%20Tea.svg" alt="Barley Milk Tea">
+						<figcaption>
+							<h3>Barley Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
 				</div>
-				<div class="placeCard3">
-					<img class="placeImg" src="images/tea.jpg" alt="x">
-					<div class="placeCaption">
-						Name Milk Tea<br>
-					</div>
-					<div class="placeRank"></div>
+				<div class="flavorCol3">
+					<figure>
+						<img src="images/Brown%20Sugar%20Milk%20Tea.svg" alt="Brown Sugar Milk Tea">
+						<figcaption>
+							<h3>Brown Sugar Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
 				</div>
-                 <div class="placeCard4">
-					<img class="placeImg" src="images/tea.jpg" alt="x">
-					<div class="placeCaption">
-						Name Milk Tea<br>
-					</div>
-					<div class="placeRank"></div>
+				<div class="flavorCol4">
+					<figure>
+						<img src="images/Chocolate%20Milk%20Tea.svg" alt="Chocolate Milk Tea">
+						<figcaption>
+							<h3>Chocolate Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
 				</div>
-                </div>
+</div>
+             <div class="sectionHeader"><h1 class="beginners">Common Flavors</h1></div>
+				<div class="sectionSeparation"></div>      
+			<div class="test cs-style-3">
+				<div class="flavorCol1">
+					<figure>
+						<img src="images/Almond%20Milk%20Tea.svg" alt="Almond Milk Tea">
+						<figcaption>
+							<h3>Almond Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol2">
+					<figure>
+						<img src="images/Barley%20Milk%20Tea.svg" alt="Barley Milk Tea">
+						<figcaption>
+							<h3>Barley Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol3">
+					<figure>
+						<img src="images/Brown%20Sugar%20Milk%20Tea.svg" alt="Brown Sugar Milk Tea">
+						<figcaption>
+							<h3>Brown Sugar Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol4">
+					<figure>
+						<img src="images/Chocolate%20Milk%20Tea.svg" alt="Chocolate Milk Tea">
+						<figcaption>
+							<h3>Chocolate Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol1">
+					<figure>
+						<img src="images/Classic%20Boba%20Milk%20Tea.svg" alt="Classic Boba Milk Tea">
+						<figcaption>
+							<h3>Classic Boba Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol2">
+					<figure>
+						<img src="images/Coconut%20Milk%20Tea.svg" alt="Coconut Milk Tea">
+						<figcaption>
+							<h3>Coconut Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol3">
+					<figure>
+						<img src="images/Coffee%20Milk%20Tea.svg" alt="Coffee Milk Tea">
+						<figcaption>
+							<h3>Coffee Milk Tea</h3>
+							Perfect for supertasters who take their coffee with extra cream and sugar.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol4">
+					<figure>
+						<img src="images/Earl%20Grey%20Milk%20Tea.svg" alt="Earl Grey Milk Tea">
+						<figcaption>
+							<h3>Earl Grey Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol1">
+					<figure>
+						<img src="images/Honey%20Milk%20Tea.svg" alt="Honey Milk Tea">
+						<figcaption>
+							<h3>Honey Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol2">
+					<figure>
+						<img src="images/Honeydew%20Milk%20Tea.svg" alt="Honeydew Milk Tea">
+						<figcaption>
+							<h3>Honeydew Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol3">
+					<figure>
+						<img src="images/Hong%20Kong%20Milk%20Tea.svg" alt="Hong Kong Milk Tea">
+						<figcaption>
+							<h3>Hong Kong Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol4">
+					<figure>
+						<img src="images/Jasmine%20Milk%20Tea.svg" alt="Jasmine Milk Tea">
+						<figcaption>
+							<h3>Jasmine Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol1">
+					<figure>
+						<img src="images/Mango%20Milk%20Tea.svg" alt="Mango Milk Tea">
+						<figcaption>
+							<h3>Mango Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol2">
+					<figure>
+						<img src="images/Oolong%20Milk%20Tea.svg" alt="Oolong Milk Tea">
+						<figcaption>
+							<h3>Oolong Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol3">
+					<figure>
+						<img src="images/Red%20Bean%20Milk%20Tea.svg" alt="Red Bean Milk Tea">
+						<figcaption>
+							<h3>Red Bean Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol4">
+					<figure>
+						<img src="images/Rose%20Milk%20Tea.svg" alt="Rose Milk Tea">
+						<figcaption>
+							<h3>Rose Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol1">
+					<figure>
+						<img src="images/Sesame%20Milk%20Tea.svg" alt="Sesame Milk Tea">
+						<figcaption>
+							<h3>Sesame Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol2">
+					<figure>
+						<img src="images/Strawberry%20Milk%20Tea.svg" alt="Strawberry Milk Tea">
+						<figcaption>
+							<h3>Strawberry Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol3">
+					<figure>
+						<img src="images/Taro%20Milk%20Tea.svg" alt="Taro Milk Tea">
+						<figcaption>
+							<h3>Taro Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flavorCol4">
+					<figure>
+						<img src="images/Thai%20Milk%20Tea.svg" alt="Thai Milk Tea">
+						<figcaption>
+							<h3>Thai Milk Tea</h3>
+							The cow jumped over the moon and the fox jumped over the fence.
+						</figcaption>
+					</figure>
+				</div>
+	
 
-              	<!-- Testing Out This Layout -->
+
+
+              	<!-- Testing Out This Layout 
 
 				<div class="locationName"><h1 class="detailsHeader">Milk Tea Menu Items</h1></div>
 				<div class="sectionSeparation"></div>
@@ -204,7 +421,9 @@
                 <div class="pickBox1">
                     <img class="subImg" src="images/tea.jpg"><br>
 					<div class="subCaption">Wintermelon Milk Tea</div>
-                </div>
+                </div>-->
+
+
 			</div>
 		</div>
 		<div id="footerContainer">
@@ -216,5 +435,10 @@
 				<div id="footerCopyright">© 2014 Christine Do, Frank Mezzatesta, Donna Yee</div>
 			</div>
 		</div>
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/toucheffects.js"></script>
+		<script src="js/modernizr.custom.js"></script>
 	</body>
 </html>

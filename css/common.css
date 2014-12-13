@@ -1,46 +1,3 @@
-/*
-white navbar
-#4C4C4C navbar2 and footer
-
-900px global
-400px banner h homepage
-300px banner h everywhere else
-
-black shadow blur of 4 distance of 1
-
-75px padding below headers
-
-70px high navbar
-50px the one below it
-
-95px footer
-
-#03A9F4 blue fallback for the banner on the homepage
-#5360FE blue on what is milk tea
-#448AFF blue beginners guide
-#DA2E75 pink specials and events
-#00BFA5 green search page
-
-#00BCD4 location result page header color
-rgba(224,247,250,0.15) background blue on location result
-#80DEEA is divider line below the bg on the result page
-
-rgba(225,245,254,0.15) background blue on the homepage
-#4FC3F7 is divider line below the blue background homepage only
-
-colors of headers on all other pages is the same as their banner
-
-same bg card bg as homepage
-same line card line homepage
-
-showing milk tea places by card
-rgba(224,242,241,0.15) bg
-#B2DFDB line
-
-rgba(252,228,236,0.15) bg on the specials and vents page
-#FCE4EC line below that
-*/
-
 * {box-sizing:border-box;}
 body {width:100%;min-width:600px;height:100%;
 	font-family:'Open Sans','Helvetica Neue', Helvetica,sans-serif;font-size:14px;font-weight:300;padding:0px;margin:0px;padding:0px;margin:0px;background-color: #fff;};
@@ -161,8 +118,19 @@ img {display:block;
 			.subCaption-home {
 				min-height: 250px;
 			}
+		/**** Edited for Beginner's Guide ***/
 		.inlineImg {width:33%;height:250px;}
 		.inlineCaption {width:44%;height:auto;}
+
+		/**** Added for What Is Milk Tea? ****/
+		.inlineAnatomy {
+			width: 50%; 
+		}
+		.inlineAnatomyText {
+			width: 50%;
+			padding-left: 30px;
+		}
+
 		.wideImg {width:100%;height:auto;}
 		.wideCaption {width:100%;height:auto;
 			font-size:150%;text-align:center;padding-bottom:10px;}
@@ -184,6 +152,7 @@ img {display:block;
 				border-bottom-right-radius:0px !important;}
 			.placeCaption {padding-top:10px;width:100%;height:auto;
 				padding:4px;}
+					.cardHearts {height:20px;}
 			.placeRank {position:absolute;top:0px;left:0px;
 				background-color:rgba(150,75,0,1.0);border-bottom-right-radius:2px;}
 
@@ -262,26 +231,24 @@ span.locationHeader{
 }
 
 .carouselContainer{
-    width: 68%;
-    height: auto;
-    background-size: contain;
+    width: 50%;
     padding-right: 15px;
 }
 
 .ratings{
-    width: 32%;
+    width: 26%;
     height: auto;
-    padding-left: 50px;
+    padding-left: 35px;
 }
 
 .ratingsImg{
-    width: 65%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
 .moneyRatingImg{
-    width: 12%;
+    width: 21%;
     height: auto;
 }
 
@@ -309,6 +276,10 @@ h2.categoryHeader {
     height: auto;
 }
 
+h4#cake {
+	font-size: 20px;
+	font-weight: 400;
+}
 /********************************
 		BEGINNER'S GUIDE 
 *********************************/
@@ -442,5 +413,10 @@ h2.categoryHeader {
 .safeClassic span {
 	font-weight: 300;
 }
+/****** Carousel thingy *****/
 
-
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

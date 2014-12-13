@@ -22,3 +22,9 @@ function getUrlParameter(sParam){
 	}
 	return false;
 }
+
+
+// Carousel
+
+$(".owl-carousel").owlCarousel();
+$(document).ready(function() {
