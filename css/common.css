@@ -135,6 +135,9 @@ img {display:block;
 		.wideCaption {width:100%;height:auto;
 			font-size:150%;text-align:center;padding-bottom:10px;}
 		/* PLACES */
+        .cardTitle {width:100%;
+        font-size:140%;margin-bottom:4px;border-bottom:1px solid rgba(0,0,0,0.1);}
+        .cardHearts {display:inline !important;height:10px;float:none !important;}
 		.placeCard1 {width:23%;margin:0px 1% 0px 0px;}
 		.placeCard2 {width:23%;margin:0px 1% 0px 1%;}
 		.placeCard3 {width:23%;margin:0px 1% 0px 1%;}
@@ -326,6 +329,7 @@ h4#cake {
 
 .test figure img {
 	max-width: 100%;
+    margin-top: -35px;
 	display: inline-block;
 	position: relative;
 }
