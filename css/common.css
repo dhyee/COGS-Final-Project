@@ -98,6 +98,7 @@ img {display:block;
 	#content {}
 		#content img, #content div {float:left;}
 		.sectionHeader {float:left;clear:both;margin:40px 0px 10px 0px;}
+		.sectionHeadertwo {float:left;clear:both;margin: 0px;}
 		.sectionSeparation {float:left;clear:both;}
         .featureBox1 {width:32%;margin:0px 1% 0px 0px;}
 		.featureBox2 {width:32%;margin:0px 1% 0px 1%;}
@@ -312,6 +313,19 @@ h4#cake {
 	padding-right: 0px;
 	padding-bottom: 12px;
 }
+/************* Only for flavor guide on Beginner's Guide ****************/
+
+.flavorRowLast {
+	padding-right: 12px;
+	padding-bottom: 35px;
+}
+
+.flavorCellLast {
+	padding-right: 0px;
+	padding-bottom: 35px;
+}
+
+/*************************************************************************/
 
 .test figure {
 	width: 216px;
@@ -433,6 +447,25 @@ h4#cake {
 .detailsColor {
 	background-color: rgba(224,247,250,.3);
 	border-bottom: 1px solid #80DEEA;
+	padding-bottom: 25px;
+}
+
+.specialsColor {
+	background-color: rgba(252,228,236,.15);
+	border-bottom: 1px solid #FCE4EC;
+	padding-bottom: 25px;
+}
+
+.featuredColor {
+	background-color: rgba(225,245,254,.3);
+	border-bottom: 1px solid #4FC3F7;
+	padding-bottom: 25px;
+}
+
+.flavorsColor {
+	background-color: rgba(227,242,253,.3);
+	border-top: 1px solid BBDEFB;
+	border-bottom: 1px solid #BBDEFB;
 	padding-bottom: 25px;
 }
 
