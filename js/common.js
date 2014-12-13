@@ -26,9 +26,6 @@ function getUrlParameter(sParam){
 
 // Carousel
 
-//$(".owl-carousel").owlCarousel();
-//$(document).ready(function() {
+$(".owl-carousel").owlCarousel();
+$(document).ready(function() {
 
-	$(document).ready(function() {
- 	$("#owl-example").owlCarousel();
- });
